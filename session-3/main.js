@@ -106,7 +106,7 @@ console.log(upperCasedPeople);
 
 const es6people = people.map((person) => {
   return {
-    name: person.name.toUpperCase(),
+    name: person.name.toLowerCase(),
     title: person.title,
     created: new Date(),
   };

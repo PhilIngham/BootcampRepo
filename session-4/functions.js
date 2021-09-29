@@ -28,4 +28,22 @@ function addFive(num) {
 // Fat arrow expressions
 
 const addFiveArrow = (num) => num + 5;
-console.log(addFiveArrow(15));
+console.log(addFiveArrow(762));
+
+// Function to check all characters are unique in a string
+
+let str = "aba";
+function isIsogram(str) {
+  let letterArray = str.split("");
+  str.toLowerCase();
+  for (let i = 0; i < letterArray.length; i++) {
+    for (let j = 0; j < letterArray.length; j++) {
+      if (i === j) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+isIsogram(str);

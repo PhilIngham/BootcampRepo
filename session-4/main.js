@@ -21,4 +21,3 @@ console.log(leo);
 const bear = zoo?.bears?.[0];
 console.log(bear);
 console.log();
-r;
