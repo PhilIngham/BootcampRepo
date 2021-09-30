@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 id="heading" onclick="headingListener()">Document Object Model Demo</h1>
+
+    <p class="paragraph" onmouseover="paraHover()">Lorem Ipsum Yada Yada</p>
+
+    <button id="listAdderBtn">Click me!</button>
+
+    <ul class="number-list">
+      <li class="item">One</li>
+      <li class="item">Two</li>
+    </ul>
+
+    <div>
+      <img
+        data-custom-image-name="myfancyimage"
+        src="https://th.bing.com/th/id/R.8cd2be737b9f4f99746997d33523c259?rik=G0nE%2fzoHrhXmOQ&pid=ImgRaw&r=0"
+        alt=""
+      />
+    </div>
+
+    <label for="comments">Comments</label>
+    <textarea name="commentsBox" id="comments" cols="30" rows="10"></textarea>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
