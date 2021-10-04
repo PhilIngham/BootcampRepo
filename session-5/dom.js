@@ -53,20 +53,20 @@ listAdderBtn.addEventListener("click", function () {
   }
 });
 
-const commentsBox = document.getElementById("comments");
+// const commentsBox = document.getElementById("comments");
 
-function validateComments(event) {
-  const currentInput = event.target.value;
-  const numbersRE = /\d/;
+// function validateComments(event) {
+//   const currentInput = event.target.value;
+//   const numbersRE = /\d/;
 
-  console.log(currentInput);
+//   console.log(currentInput);
 
-  if (numbersRE.test(currentInput)) {
-    // bad input - recieved numbers
-    commentsBox.classList.toggle("error");
-  } else {
-    commentsBox.classList.toggle("error");
-  }
-}
+//   if (numbersRE.test(currentInput)) {
+//     // bad input - recieved numbers
+//     commentsBox.classList.toggle("error");
+//   } else {
+//     commentsBox.classList.toggle("error");
+//   }
+// }
 
-commentsBox.addEventListener("keyup", validateComments);
+// commentsBox.addEventListener("keyup", validateComments);

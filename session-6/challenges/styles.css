@@ -1,0 +1,27 @@
+#scissors {
+  height: 200px;
+  width: 200px;
+}
+#paper {
+  height: 200px;
+  width: 200px;
+}
+#rock {
+  height: 200px;
+  width: 200px;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  background-color: pink;
+}
+.choices {
+  margin: 30px 0;
+  align-items: center;
+  align-self: center;
+  border: 10px rebeccapurple;
+}
+#results {
+  align-items: center;
+}
