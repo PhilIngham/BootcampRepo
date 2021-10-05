@@ -38,7 +38,7 @@ function isIsogram(str) {
   str.toLowerCase();
   for (let i = 0; i < letterArray.length; i++) {
     for (let j = 0; j < letterArray.length; j++) {
-      if (i === j) {
+      if (letterArray[i] === letterArray[j]) {
         return false;
       }
     }
