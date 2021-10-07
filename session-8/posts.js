@@ -19,11 +19,37 @@ fetch(url)
   .then((response) => response.json())
   .then((json) => displayPosts(json));
 
-// const fetchData = async () => {
-//   const response = await fetch(url);
-//   const json = await response.json();
+// Create a new post
 
-//   return json;
-// // };
+const formElement = document.getElementById("new-post-form");
 
-// console.log(fetchData());
+const addNewPost = async (event) => {
+  // Prevent the form from refreshing
+  event.preventDefault();
+  const userField = document.getElementById("user");
+  const titleField = document.getElementById("title");
+  const bodyField = document.getElementById("body");
+
+  const requestBody = {
+    userId: userField.value,
+    title: titleField.value,
+    body: bodyField.value,
+  };
+
+  const response = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(requestBody),
+  });
+
+  const data = await response.json();
+
+  document.getElementById("status").innerHTML = "Successful post";
+};
+
+formElement.addEventListener("submit", addNewPost);
+
+// Reset fields
+
+userField.value = "";
+titleField.value = "";
+bodyField.value = "";
