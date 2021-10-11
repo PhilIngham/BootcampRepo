@@ -35,5 +35,3 @@ export const farenheitToCelsius = (temperature) => {
   }
   return temperature;
 };
-
-export const dynamicInput = (input) => {};

@@ -10,10 +10,10 @@ Input
  - not above three digits, not below kelvin
  
  Calculation 
- 
+  
  */
 
-// Celcius to Farenheit
+// * Celsius to Farenheit Conversion
 
 describe("Celsius to Farenheit Conversion", () => {
   it("Should throw an error when input contains anything that isn't a number", () => {
@@ -37,9 +37,8 @@ describe("Celsius to Farenheit Conversion", () => {
   });
 });
 
-// ------------------------------------------------------------------
+// ? Farenheit to Celsius Conversion
 
-// F -> C
 describe.skip("Farenheit to celsius", () => {
   it("Should throw error if not a number", () => {
     const temp = "absd";

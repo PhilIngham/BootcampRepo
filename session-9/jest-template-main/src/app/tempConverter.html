@@ -4,28 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Temperature Converter</title>
   </head>
   <body>
     <div class="container">
-      <h1>Convert Your Temperature</h1>
+      <header id="header">Temperature Converter</header>
 
-      <input
-        type="text"
-        name="temperatureValue"
-        id="temp-value"
-        placeholder="Enter temperature..."
-      />
+      <div class="input-area">
+        <input
+          type="number"
+          name="temperatureValue"
+          id="temp-value"
+          placeholder="Enter temperature..."
+        />
 
-      <select name="temperature" id="convert-to">
-        <option value="C">Celsius</option>
-        <option value="F">Farenheit</option>
-        <option value="K">Kelvin</option>
-      </select>
+        <select name="temperature" id="convert-to">
+          <option value="C">Celsius</option>
+          <option value="F">Farenheit</option>
+          <option value="K">Kelvin</option>
+        </select>
 
-      <button type="submit" class="submit-btn">Convert</button>
-
-      <h2 id="outputTemp">Temperature:</h2>
+        <button type="submit" id="submit-btn">Convert</button>
+        <h3 id="display-temperature">Temperature:</h3>
+        <h4 id="outputTemp"></h4>
+      </div>
     </div>
+
+    <script type="module" src="TemperatureClass.js"></script>
+    <script type="module" src="tempConverter.js"></script>
   </body>
 </html>
